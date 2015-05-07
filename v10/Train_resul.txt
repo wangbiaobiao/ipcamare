@@ -1,0 +1,7 @@
+A=normrnd(1,100,[10000,2])
+abs(A)
+A=floor(ans)
+
+A(A(:,1)==A(:,2),2)=floor(100*rand(1,1))
+A=A+1
+A(:,3)=10*rand(10000,1)
